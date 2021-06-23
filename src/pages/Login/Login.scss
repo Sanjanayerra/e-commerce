@@ -1,0 +1,19 @@
+@import "../../styles/global.style.scss";
+
+.cart-icon{
+    height: 200px;
+    width: 200px;
+}
+.start-text{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: $text-grey;
+    margin-bottom: 40px;
+}
+.great-text{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+}

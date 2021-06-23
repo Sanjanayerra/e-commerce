@@ -1,0 +1,54 @@
+@import "../../styles/global.style.scss";
+
+.categories {
+    background: $page-bg;
+  .header{
+    height:50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom:40px;
+    padding-bottom:50px; 
+  }
+  .category-card{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 8px;
+    height: 80px;
+    font-size: 14px;
+  }
+  img {
+    width: 80px;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+}
+
+.category-details{
+    margin: 10px;
+}
+.category-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #e6ebf7;
+    padding: 10px;
+    color: #4769c1;
+}
+.category-name{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .category-description{
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-grey;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+  }

@@ -1,0 +1,43 @@
+@import "../../styles/global.style.scss";
+
+$fontSize14: 14px;
+$fontSize16: 16px;
+$fontSize12: 12px;
+
+.icon-image{
+    height: 200px;
+    width: 200px;
+}
+.bg-color{
+    background-color: $page-bg;
+}
+.price{
+    text-align: left !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-details-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-details-description{
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: $text-grey;
+    font-weight: 600;
+}
+.select-size{
+    font-size: 14px;
+    font-weight: 700;
+}
+.size-chart{
+    font-size: 12px;
+    font-weight: 600;
+}
+.sizes{
+    width: 55px;
+    justify-content: center;
+    margin: 25px 0px;
+    font-weight: 600;
+}

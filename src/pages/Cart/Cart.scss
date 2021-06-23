@@ -1,0 +1,135 @@
+@import "../../styles/global.style.scss";
+
+// ion-content{
+//   --background: #f6f7fb;
+// }
+.cart-header{
+  height: 50px;
+  padding-left: 15px;
+  padding-right:15px;
+  background: $page-bg;
+  padding-bottom:50px;
+
+  .heading{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .menu-icons{
+    margin: 15px 0px;
+    font-size: 18px !important;
+    color: $gray
+  }
+}
+  .input-icon-wrap { 
+      display: flex;
+      flex-direction: row;
+  }
+
+  .search-box{
+      z-index: 9;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 85%;
+  }
+
+  .search{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .input-icon {
+      color: $gray;
+      background-color: $white;
+  }
+  
+  .input-with-icon {
+      border: none;
+      flex: 1;
+  }
+  
+  .input-icon, .input-with-icon {
+      padding: 10px;
+  }
+
+.cart-card {
+  margin: 10px 20px;
+  border-radius: 10px;
+  padding: 8px;
+  height: 80px;
+  font-size: 14px;
+    .card-details {
+      width: 100%;
+      padding-left: 10px;
+    }
+    .button {
+      line-height: 25px;
+      width: 100px;
+    }
+    .card-name {
+      * {
+        line-height: 1.5em;
+        margin: 0px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .cart-name{
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+    }
+    .product-cost {
+      color: $primary-color;
+      font-weight: bold;
+    }
+    img {
+      width: 80px;
+      height: 100%;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+    .add-button{
+      display: flex;
+      justify-content: space-around;
+    .icon{
+      background-color: #879cc5;
+      border-radius: 5px;
+      padding: 5px;
+      color: $white;
+    }
+    .quantity{
+      font-weight: 600;
+      padding: 5px 10px;
+    }
+  }
+  }
+  .total-price-card{
+    justify-content: space-between;
+    background-color: $white;
+    padding: 20px;
+    .price-text{
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .price{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .checkout-button{
+      background-color: $primary-color;
+      color: $white;
+      font-weight: 600;
+      padding: 13px 40px;
+      border-radius: 15px;
+    }
+  }

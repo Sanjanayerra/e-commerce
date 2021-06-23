@@ -1,0 +1,26 @@
+@import "../../styles/global.style.scss";
+
+.getstarted-bg-img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dn1aVIsuR0wF-s__2gxoxyXFvMsfhnL9eQ&usqp=CAU") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.best-quality {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.explore-text{
+    font-size: 12px;
+    font-weight: 600;
+    // color: $text-grey;
+    color: black;
+    text-align: center;
+    margin: 30px 55px;
+}
+.page{
+    top: 200px;
+    position: relative;
+}

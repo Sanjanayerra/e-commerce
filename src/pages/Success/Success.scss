@@ -1,0 +1,23 @@
+@import "../../styles/global.style.scss";
+
+.tick{
+    color: #2bbc8a;
+    font-size: 90px;
+    padding: 20px;
+}
+.thanks-message{
+    font-size: 20px;
+    font-weight: 700;
+}
+.success-msg{
+    font-size: 14px;
+    color: $text-grey;
+    padding: 30px;
+    text-align: center;
+    line-height: 25px;
+}
+.back{
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-grey;
+}

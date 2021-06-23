@@ -1,0 +1,86 @@
+$common-border-radius: 5px;
+$page-margins: 0px 15px 0px 15px;
+
+body {
+  background: #f5f7fa;
+}
+
+a{
+  text-decoration: none;
+}
+
+.component-heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background: $white;
+}
+
+.content{
+  overflow-y: scroll;
+}
+.scrollable-cards {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  ion-chip {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: $white;
+  }
+  .active {
+    background: $primary-color !important;
+    color: $white;
+    ion-icon {
+      color: $white !important;
+      margin-top: -2px;
+    }
+  }
+}
+.scrollable-cards2 {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  ion-chip {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: $white;
+  }
+  .active {
+    background: $primary-color !important;
+    color: $white;
+    ion-icon {
+      color: $white !important;
+      margin-top: -2px;
+    }
+  }
+}
+.product-description{
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+}
+.p-14{
+  font-size: 14px;
+}
+.error-messages{
+  margin: 5px 15px;
+ 
+  color: red;
+}
+
+.input-with-icon{
+  font-size: 13px;
+}

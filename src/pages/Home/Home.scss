@@ -1,0 +1,85 @@
+@import "../../styles/global.style.scss";
+
+$fontSize16: 16px;
+$fontSize14: 14px;
+$fontSize12: 12px;
+$fontSize20: 20px;
+
+.home{
+    background-color: $page-bg;
+
+    .header{
+    height:150px;
+    padding-left: 15px;
+    padding-right:15px;
+    background: $page-bg; 
+    margin-bottom:40px;
+    padding-bottom:50px;
+
+    .explore-txt{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .sub-text{
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .menu-icons{
+        justify-content: space-between;
+        margin:15px 0px;
+        font-size:28px !important;
+        color:$gray
+    }
+}
+
+    .input-icon-wrap { 
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search-box{
+        z-index: 9;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 85%;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-icon {
+        color: $gray;
+        background-color: $white;
+    }
+    
+    .input-with-icon {
+        border: none;
+        flex: 1;
+    }
+    
+    .input-icon, .input-with-icon {
+        padding: 10px;
+    }
+
+    .options-menu {
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        border-radius: 10px;
+        color: $white;
+        margin-left: 10px;
+        font-size: 18px;
+        background-color: $primary-color;
+    }
+    .content {
+        padding:$page-margins;
+        overflow-y: scroll;
+    }
+}
+
+  

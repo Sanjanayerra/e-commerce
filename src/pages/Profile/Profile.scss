@@ -1,0 +1,58 @@
+@import "../../styles/global.style.scss";
+
+
+.profile{
+    height: 100vh;
+    .profile-card{
+        min-height:50px;
+        padding:10px;
+        background-color: $page-bg;
+        .heading{
+            padding-bottom: 5px;
+        }
+    }
+    .setting-details{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .no-border{
+        border:0px
+    }
+    .back-page-header{
+        margin-top:0px !important
+    }
+    .profile-image{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .content{
+        padding:$page-margins;
+        overflow-y: auto;
+        height:100%
+    }
+
+    .profile-card{
+        .setting-icon{
+            width: 50px;
+            font-size: 30px;
+            color:$primary-color
+        }
+        span{
+            font-size:12px;
+            color: $text-grey;
+            font-weight: 600;
+        }
+        .heading{
+            font-size:14px;
+            font-weight: 600;
+            color: black;
+            margin: 0px !important;
+        }
+        .fwd-arrow{
+            color: $text-grey;
+        }
+    }
+    
+}

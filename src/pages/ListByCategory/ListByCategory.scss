@@ -1,0 +1,32 @@
+@import "../../styles/global.style.scss";
+
+.category-card-details{
+    margin: 10px 25px 10px 0px;
+}
+.item-card{
+    margin: 10px;
+    line-height: 2;
+    .image{
+        font-size: 60px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: #e6eaf6;
+    }
+    .product-name{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .product-description{
+        font-size: 13px;
+    }
+    .product-prize {
+        color: $primary-color;
+        font-size: 13px;
+        font-weight: 600;
+        .product-rating{
+            font-size: 14px;
+            font-weight: 600;
+            color: #f88012;
+        }
+    }
+}

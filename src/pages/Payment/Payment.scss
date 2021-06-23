@@ -1,0 +1,97 @@
+@import '../../styles/global.style.scss';
+
+.Payment-header {
+    background-color: $page-bg;
+}
+.payment, .delivery, .billing {
+    padding: 15px;
+}
+.payment-page-labels {
+    font-size: 13px;
+    font-weight: 600;
+}
+.pay {
+    padding: 0px 15px;
+}
+.margin {
+    margin: 10px 0px;
+}
+.pay-mode {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.delivery-card {
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 8px;
+    height: 80px;
+    font-size: 14px;
+    background-color: $page-bg;
+    .card-details {
+    width: 100%;
+    padding-left: 10px;
+    }
+    .home-label {
+    font-weight: bold;
+        font-size: 14px;
+        line-height: 1.5em;
+        margin: 0px;
+    }
+    .radio-btn {
+    margin-right: 10px;
+    border-radius: 10px;
+    margin: 6px;
+    }
+    .phone-number {
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-grey;
+    padding: 3px 0px;
+    }
+    .address {
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-grey;
+    padding: 3px 0px;
+    }
+    .edit{
+    font-size: 30px;
+    margin: 15px;
+    }
+}
+.billing-card {
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 30px 15px;
+    height: 160px;
+    font-size: 14px;
+    background-color: $page-bg;
+}
+.billing-info{
+    line-height: 2;
+    color: $text-grey;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.total{
+    line-height: 5 !important;
+}
+.billing-label{
+    width: 45%;
+}
+.colon{
+    width: 50%;
+}
+.cost{
+    text-align: end;
+}
+.total{
+   .total-cost{
+       text-align: end;
+       color: $primary-color;
+       font-size: 16px;
+       font-weight: 600;
+   }
+}

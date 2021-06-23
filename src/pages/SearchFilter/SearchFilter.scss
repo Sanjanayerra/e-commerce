@@ -1,0 +1,83 @@
+@import "../../styles/global.style.scss";
+
+.filter-header{
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #f6f7fb;
+}
+.menu-icons {
+    margin: 15px 0px;
+    font-size: 18px !important;
+    color: gray;
+}
+.filter-div{
+    padding: 0px 15px;
+}
+.label-heading{
+    font-size: 14px;
+    color: $text-grey;
+    padding-bottom: 15px;
+}
+.close-btn{
+    float: right;
+}
+.items{
+    width: 25%;
+    justify-content: center;
+    padding: 7px;
+    border: 1px solid darkgray;
+    margin: 0px 7px 15px 0px;
+    text-align: center;
+    border-radius: 7px;
+    color: $text-grey;
+    font-size: 14px;
+}
+section.range-slider {
+    position: relative;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+section.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    width: 200px;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+section.range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+section.range-slider input::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+section.range-slider input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+section.range-slider input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+  section.range-slider input[type=range]::-moz-focus-outer {
+  border: 0;
+}

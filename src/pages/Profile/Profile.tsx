@@ -9,7 +9,7 @@ const Profile: React.FC = (props:any) => {
     <IonPage className="profile">
       <IonContent>
         <div className="page-margins">
-            <div className="cart-header">
+            <div className="header">
                 <div className="d-flex flex-row menu-icons">
                     <IonIcon icon={chevronBackSharp} />
                     <span className="heading">

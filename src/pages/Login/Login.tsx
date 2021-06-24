@@ -2,6 +2,7 @@ import { IonContent, IonIcon, IonPage, IonLabel } from '@ionic/react';
 import { cartOutline, chevronBackSharp } from 'ionicons/icons';
 import '../Login/Login.scss';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login: React.FC = (props: any) => {
 
@@ -37,10 +38,11 @@ const Login: React.FC = (props: any) => {
                         <input className="input" type="password" placeholder="Password" />
                     </div>
                     <div className="text-forgot">Forgot password?</div>
-
-                    <div className="button-div">
-                        <button className="button" >Log In</button>
-                    </div>
+                    <Link to="/home">
+                        <div className="button-div">
+                            <button className="button" >Log In</button>
+                        </div>
+                    </Link>
                     <div className="flex-centered pd-bt-30">
                         <span className="account-text">Are you new user? &nbsp;
                             <span className="login">Register</span>

@@ -21,8 +21,23 @@
 .close-btn{
     float: right;
 }
+.scroll {
+    display: grid !important;
+    grid-template-columns: repeat(4,85px);
+    justify-content: space-between;
+}
 .items{
     width: 25%;
+    justify-content: center;
+    padding: 7px;
+    border: 1px solid darkgray;
+    margin: 0px 7px 15px 0px;
+    text-align: center;
+    border-radius: 7px;
+    color: $text-grey;
+    font-size: 14px;
+}
+.brand{
     justify-content: center;
     padding: 7px;
     border: 1px solid darkgray;

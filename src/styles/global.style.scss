@@ -61,7 +61,7 @@
     margin: 0;
 }
 .button-div{
-    padding: 15px !important;
+    padding: 15px 30px !important;
 }
 
 .input-div{
@@ -80,14 +80,14 @@
 }
 
 .label{
-    margin: 10px 15px 7px;
+    margin: 10px 30px;
     color: $text-grey;
     font-size: 12px;
     font-weight: 600;
 }
 
 .text-forgot{
-    margin-right: 15px;
+    margin-right: 30px;
     margin-bottom: 25px;
     color: $text-grey;
     font-weight: bold;
@@ -120,6 +120,14 @@
 .text-center{
     text-align: center;
 }
+.header{
+    height: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #f6f7fb;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+  }
 ion-tab-button {
     background: #f6f7fb;
 }

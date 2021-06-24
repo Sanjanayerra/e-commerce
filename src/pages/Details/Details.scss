@@ -11,6 +11,17 @@ $fontSize12: 12px;
 .bg-color{
     background-color: $page-bg;
 }
+.favorite{
+    font-size: 20px;
+    color: $text-grey;
+}
+.unfavorite{
+    font-size: 20px;
+    color: $primary-color;
+}
+.icon-div{
+    text-align: center;
+}
 .price{
     text-align: left !important;
     font-size: 20px;
@@ -34,10 +45,21 @@ $fontSize12: 12px;
 .size-chart{
     font-size: 12px;
     font-weight: 600;
+    color: $text-grey;
 }
 .sizes{
     width: 55px;
     justify-content: center;
     margin: 25px 0px;
     font-weight: 600;
+    background-color: $white;
+}
+
+.sizes:hover{
+    background-color: $primary-color;
+    color: $white;
+}
+.sizes:active{
+    background-color: $primary-color;
+    color: $white;
 }

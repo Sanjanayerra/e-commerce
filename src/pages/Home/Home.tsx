@@ -1,9 +1,20 @@
 import { IonPage, IonIcon, IonChip, IonLabel } from "@ionic/react";
 import { search, notificationsOutline, optionsOutline, menu} from "ionicons/icons";
 import "../Home/Home.scss";
-import React from "react";
+import React, {useState} from "react";
 
 const Home: React.FC = (props:any) => {
+
+  const [categories, setCategories] = useState([
+    {categories: "Jacket"},{categories: "T-Shirt"},{categories: "Dress"},{categories: "Jeans"}
+  ])
+  const [newArrivals, setNewArrivals] = useState([
+    {newArrivals: "Jacket"},{newArrivals: "T-Shirt"},{newArrivals: "Dress"},{newArrivals: "Jeans"}
+  ])
+  const [newArrivals2, setNewArrivals2] = useState([
+    {newArrivals2: "Jacket"},{newArrivals2: "T-shirt"},{newArrivals2: "Jeans"},{newArrivals2: "Dress"}
+  ])
+
   return (
     <IonPage className="home">
       <div className="header">
@@ -41,55 +52,46 @@ const Home: React.FC = (props:any) => {
           <span className="component-heading">Categories</span>
           <span className="component-heading">See All</span>
         </div>
-        <div className="scrollable-cards">
+        <div className="scrollable-cards flex-row">
+        {
+          categories.map((item:any) => {
+                return(
           <IonChip>
-            <IonLabel>Jacket</IonLabel>
+            <IonLabel>{item.categories}</IonLabel>
           </IonChip>
-          <IonChip>
-            <IonLabel>T-Shirt</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Dress</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Jeans</IonLabel>
-          </IonChip>
+          )
+        })
+        }
         </div>
         <div className="space-between">
           <span className="component-heading">New Arrivals</span>
           <span className="component-heading">See All</span>
         </div>
         <div className="scrollable-cards2">
-          <IonChip>
-            <IonLabel>Jacket</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>T-Shirt</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Dress</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Jeans</IonLabel>
-          </IonChip>
+          {
+            newArrivals.map((item:any) => {
+              return (
+                <IonChip>
+                  <IonLabel>{item.newArrivals}</IonLabel>
+                </IonChip>
+              )
+            })
+          }
         </div>
         <div className="space-between">
           <span className="component-heading">New Arrivals</span>
           <span className="component-heading">See All</span>
         </div>
         <div className="scrollable-cards2">
-          <IonChip>
-            <IonLabel>Jacket</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>T-Shirt</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Dress</IonLabel>
-          </IonChip>
-          <IonChip>
-            <IonLabel>Jeans</IonLabel>
-          </IonChip>
+          {
+            newArrivals2.map((item:any) => {
+              return(
+                <IonChip>
+                  <IonLabel>{item.newArrivals2}</IonLabel>
+                </IonChip>
+              )
+            })
+          }
         </div>
       </div>
     </IonPage>

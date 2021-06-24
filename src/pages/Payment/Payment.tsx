@@ -5,6 +5,10 @@ import React, { useState } from 'react';
 
 const Payment: React.FC = () => {
     
+    const [ address, setAddress ] = useState([
+        { location: "Home", phoneNumber: "(+62)32294131", address: "Cibadak Street 90" },
+        { location: "Office", phoneNumber: "(+62)32294131", address: "Sukabumi City 12" }
+    ])
     const [showAlert1, setShowAlert1] = useState(false);
     return ( 
         <IonPage>
@@ -36,30 +40,35 @@ const Payment: React.FC = () => {
                 </div>
                 <div className="delivery">
                     <div className="payment-page-labels">Delivery Address</div>
-                    <div className="delivery-card d-flex flex-row card">
-                        <div>
-                            {/* <IonRadio slot="start" value="griff" /> */}
-                            <input className="radio-btn" type="radio"></input>
-                        </div>
-                        <div className="card-details flex-column">
-                            <div className="space-between card-name">
-                                <span className="home-label">Home</span>
-                            </div>
-                            <div className="space-between flex-vertical-center">
-                                <div className="phone-number">
-                                    (+62)32294131
+                    {
+                        address.map((item:any) => {
+                            return (   
+                                <div className="delivery-card d-flex flex-row card">
+                                    <div>
+                                        <input className="radio-btn" type="radio"></input>
+                                    </div>
+                                    <div className="card-details flex-column">
+                                        <div className="space-between card-name">
+                                            <span className="home-label">{item.location}</span>
+                                        </div>
+                                        <div className="space-between flex-vertical-center">
+                                            <div className="phone-number">
+                                                {item.phoneNumber}
+                                            </div>
+                                        </div>
+                                        <div className="space-between">
+                                            <span className="address">
+                                                {item.address}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="edit">
+                                        <IonIcon icon={createOutline}></IonIcon>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="space-between">
-                                <span className="address">
-                                    Cibadak Street 90
-                                </span>
-                            </div>
-                        </div>
-                        <div className="edit">
-                            <IonIcon icon={createOutline}></IonIcon>
-                        </div>
-                    </div>
+                            )
+                        })
+                    }
                 </div>
                 <div className="billing">
                     <div className="payment-page-labels">Billing Information</div>

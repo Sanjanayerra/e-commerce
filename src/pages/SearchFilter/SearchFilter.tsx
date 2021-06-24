@@ -1,10 +1,20 @@
 import { IonPage, IonContent, IonIcon } from '@ionic/react';
 import { close } from 'ionicons/icons';
 import '../SearchFilter/SearchFilter.scss';
-import React from 'react';
+import React, {useState} from 'react';
 
 const SearchFilter: React.FC = () => {
-    
+
+    const [ gender, setGender ] = useState([
+        { gender: "Male" },{ gender: "Women" }, { gender: "Kids" }
+    ])
+    const [ brand, setBrand ] = useState([
+        { brand: "Nikah" }, { brand: "Adinda" }, { brand: "Poebah" }, { brand: "Batako" }, { brand: "Ardila" }, { brand: "Kompak" }
+    ])
+    const [ model, setModel ] = useState([
+        { model: "DA D1" }, { model: "UPC B1" }, { model: "SMP A1" }
+    ])
+
     return ( 
         <IonPage>
             <div className="filter-header">
@@ -19,9 +29,13 @@ const SearchFilter: React.FC = () => {
                 <div className="filter-div">
                     <div className="label-heading">Gender</div>
                     <div className="flex-row">
-                        <div className="items">Man</div>
-                        <div className="items">Woman</div>
-                        <div className="items">Kids</div>
+                        {
+                            gender.map((item:any) => {
+                                return (
+                                    <div className="items">{item.gender}</div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="filter-div">
@@ -36,23 +50,26 @@ const SearchFilter: React.FC = () => {
                 </div>
                 <div className="filter-div">
                     <div className="label-heading">Brand</div>
-                    <div className="flex-row">
-                        <div className="items">Nikah</div>
-                        <div className="items">Adinda</div>
-                        <div className="items">Poebah</div>
-                        <div className="items">Batako</div>
-                    </div>
-                    <div className="flex-row">
-                        <div className="items">Ardila</div>
-                        <div className="items">Kompak</div>
+                    <div className="scroll">
+                        {
+                            brand.map((item:any) => {
+                                return(
+                                    <div className="brand">{item.brand}</div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="filter-div">
                     <div className="label-heading">Model</div>
                     <div className="flex-row">
-                        <div className="items">DA D1</div>
-                        <div className="items">UPC B1</div>
-                        <div className="items">SMP A1</div>
+                        {
+                            model.map((item:any) => {
+                                return (
+                                    <div className="items">{item.model}</div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="button-div">

@@ -1,19 +1,23 @@
 import { IonChip, IonIcon, IonPage } from '@ionic/react';
-import { chevronBackSharp, heartOutline, shirtOutline } from 'ionicons/icons';
+import { chevronBackSharp, heart, heartOutline, shirtOutline } from 'ionicons/icons';
 import '../Details/Details.scss';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Details: React.FC = () => {
+
+    const [ favorite, setFavorite ] = useState(false)
   return (
       <IonPage className="bg-color">
-            <div className="cart-header">
+            <div className="header">
                 <div className="d-flex flex-row menu-icons space-between">
                     <IonIcon icon={chevronBackSharp} />
-                    <IonIcon icon={heartOutline} />
+                    <div onClick= {() => setFavorite(!favorite)}>
+                        <IonIcon className={favorite ? "favorite" : "unfavorite"} icon={favorite ? heartOutline : heart} />
+                    </div>
                 </div>
                 <div className="flex">
                     <div className="d-flex flex-column">
-                        <IonIcon className="icon-image" icon={shirtOutline} />
+                        <div className="icon-div"><IonIcon className="icon-image" icon={shirtOutline} /></div>
                         <span className="flex-horizontal-center">- - -</span>
                         <p className="product-details-name">Kemejaan Short Shirt</p>
                         <span className="text-center price">&#8377;&nbsp; 299</span>
